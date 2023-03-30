@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Creato;
+    src: url(./fonts/CreatoDisplay-Light.otf);
+}
+
+body{
+    font-family: Creato;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+.font{
+    font-size: 20px;
+}
+
+.barra-menu{
+    background: #404040;
+}
+
+.br{
+    border: none;
+}
+
+.nav-hover a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #E5C505;
+    margin: auto;
+    display: block;
+}
+
+.nav-hover a:hover::after{
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+.menu{
+    background-color: #ffffffa2;
+}
+
+/* Fin header */
+
+/* Primera pagina */
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.seccion1{
+    background-image: url(./img/background_1.png);
+    background-repeat: no-repeat;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.contenido{
+    font-family: Creato;
+}
+
+p{
+    font-size: 15pt;
+}
+
+.text-color{
+    color: #E5C505;
+}
+
+.padding-p{
+    padding-top: 7rem;
+}
+
+.logo-expand{
+    transition: 0.3s;
+}
+
+.logo-expand:hover{
+    transition: 0.3s;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* Fin Primera pagina */
+
+/* Segunda pagina */
+
+.seccion-2{
+    background-color: #e9e9e9;
+}
+
+.perfil-img{
+    width: 300px;
+    height: 300px;
+}
+
+/* FinSegunda pagina */
+
+
+/* Modal personajes */
+
+.img-expand{
+    transition: 0.3s;
+}
+
+.img-expand:hover{
+    transition: o.3s;
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.border-color{
+    border: solid #E5C505;
+}
+
+.bck-color{
+    background-color: #E5C505;
+}
+
+.container-modal{
+    padding: 1.5rem;
+    box-shadow: black 1px 20px 5rem;
+}
+
+.img-sz{
+    width: 100%;
+}
+
+.color-text{
+    color: black;
+}
+
+.color-eth{
+    color: black;
+}
+
+.img-profile{
+    width: 40px;
+    height: 40px;
+}
+
+.slider{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.btn-slide {
+    background: #fff; /* color de fondo */
+    color: #000; /* color de fuente */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+.btn-slide:hover {
+    color: #fff; /* color de fuente hover */
+  }
+.btn-slide::after {
+    content: "";
+    background: #000000; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+.btn-slide:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+/* Modal personajes */
+
+/* Footer */
+
+ul{
+    position: relative;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-a:hover{
+    transition: all 0.3s;
+    color: #E5C505;
+}
+
+.color-bjjj{
+    background-color: #2b2b2b;
+}
+
+.img-f-expand{
+    transition: 0.3s;
+}
+
+.img-f-expand:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* Footer */
+
+.ir-arriba{
+    animation: pelota 0.3s infinite alternate ease-out;
+    border-radius: 30px;
+    display: none;
+    padding: 20px;
+    background: #e9e9e9;
+    font-size: 20px;
+    color: #090a0a;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
